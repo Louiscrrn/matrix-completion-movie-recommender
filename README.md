@@ -94,6 +94,18 @@ $$
 </div>
 
 
+### Impact of Initialization and Imputation strategies on Iterative PCA
+
+The initial imputation strategy in the Iterative PCA algorithm strongly influences convergence and reconstruction accuracy.
+The plot below compares several normalization–imputation configurations:
+- Centering by user mean or movie mean, then imputing missing values with zero.
+- No normalization, imputing missing entries with the global, user, or movie mean.
+
+Results show that handling user bias provides the lowest validation RMSE, outperforming global or movie-based imputations.
+
+<p align="center"><img src="outputs/normalization_impact.png" alt="Gradient Descent Performance" width="500"/></p>
+
+
 ### Model Performance Comparison
 
 <div align="center">
