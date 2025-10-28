@@ -92,7 +92,17 @@ $$
   <img src="outputs/kpca_acc_cv.jpeg" alt="RMSE Validation" width="45%"/>
 </div>
 
-4. **Performance Comparison**
+
+### Model Performance Comparison
+
+<div align="center">
+
+| Model                          | Best RMSE | Exact Accuracy (%) | 
+|--------------------------------|:----------:|:------------------:|
+| Matrix Factorization (GD)      | **0.876**  | **0.322**          |
+| Iterative PCA                  | 0.879      | 0.318              |
+| Iterative Kernel PCA (RBF)     | 0.927      | **0.322**          |
+</div>
 
 
 ## Requirements
