@@ -41,7 +41,7 @@ The image above shows the sparsity pattern in our general user/item datasets, wh
    - Solve the following optimization problem using Gradient Descent : 
 
 $$
-\min_{I, U} \; \| R - IU^\top \|_F^2 \; + \; \lambda\|I\|_F^2 + \mu\|U\|_F^2
+\min_{I, U} \| R - IU^\top \|_F^2 \; + \; \lambda\|I\|_F^2 + \mu\|U\|_F^2
 \quad \text{s.t.} \quad I \in \mathbb{R}^{m \times k}, \quad U \in \mathbb{R}^{n \times k}, \quad \| X \|_F^2 = \mathrm{tr}(X^\top X) 
 $$
 
@@ -54,7 +54,7 @@ $$
    - With the additional orthogonality constraint, PCA act as a regularized version of the Matrix Factorization.
 
 $$
-\min_{U, I} \; \| X - U \Sigma I^\top \|_F^2 \quad \text{s.t.} \quad U^\top U = I_k, \quad I^\top I = I_k
+\min_{U, I}  \| X - U \Sigma I^\top \|_F^2 \quad \text{s.t.} \quad U^\top U = I_k, \quad I^\top I = I_k
 $$
 
 
