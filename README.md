@@ -26,8 +26,7 @@ This repository implements and compares various matrix completion methods for mo
 
 In recommendation systems, we often face the challenge of sparse rating matrices where most users have rated only a small subset of items. This sparsity makes it difficult to predict accurate recommendations.
 
-$$
-$$
+<p align="center"><img src="outputs/ratings_matrix.png" alt="Gradient Descent Performance" width="500"/></p>
 
 The image above shows the sparsity pattern in our MovieLens dataset, where white spaces represent missing ratings.
 
