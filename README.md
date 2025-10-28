@@ -28,20 +28,21 @@ In recommendation systems, we often face the challenge of sparse rating matrices
 
 <p align="center"><img src="outputs/ratings_matrix.png" alt="Gradient Descent Performance" width="500"/></p>
 
-The image above shows the sparsity pattern in our MovieLens dataset, where white spaces represent missing ratings.
+The image above shows the sparsity pattern in our general user/item datasets, where white spaces represent missing ratings. This project is based on the **MovieLens** dataset, which contains ratings from **610 users** on **4980 movies**, with nearly **98% of the matrix entries missing**.
+
 
 ## Methods Implemented
 
 1. **Matrix Factorization with Gradient Descent** [3]
-   - Decomposes rating matrix into user and movie feature matrices $U, I$
+    - Decomposes the rating matrix into low-rank user and movie feature matrices  $U, I \in \mathbb{R}^{n \times k}$, where $k$ is the latent dimensionality.
 
    <p align="center"><img src="outputs/mf_explained.png" alt="Gradient Descent Performance" width="500"/></p>
 
    - Solve the following optimization problem using Gradient Descent : 
-   $$
-   \min_{I, U} \; \| R - IU^\top \|_F^2 \; + \; \lambda\|I\|_F^2 + \mu\|U\|_F^2
-    \quad \text{s.t.} \quad I \in \mathbb{R}^{m \times k}, \quad U \in \mathbb{R}^{n \times k}, \quad \| X \|_F^2 = \mathrm{tr}(X^\top X) 
-    $$
+$$
+\min_{I, U} \; \| R - IU^\top \|_F^2 \; + \; \lambda\|I\|_F^2 + \mu\|U\|_F^2
+\quad \text{s.t.} \quad I \in \mathbb{R}^{m \times k}, \quad U \in \mathbb{R}^{n \times k}, \quad \| X \|_F^2 = \mathrm{tr}(X^\top X) 
+$$
 
    
 2. **Iterative PCA** [1][3][4] 
@@ -90,6 +91,8 @@ $$
   <img src="outputs/kpca_rmse_cv.jpeg" alt="RMSE Training" width="44.4%"/>
   <img src="outputs/kpca_acc_cv.jpeg" alt="RMSE Validation" width="45%"/>
 </div>
+
+4. **Performance Comparison**
 
 
 ## Requirements
