@@ -54,8 +54,7 @@ $$
    - With the additional orthogonality constraint, PCA act as a regularized version of the Matrix Factorization.
 
 $$
-\min_{U, I} \; \| X - U \Sigma I^\top \|_F^2 
-\quad \text{s.t.} \quad U^\top U = I_k, \; I^\top I = I_k
+\min_{U, I} \; \| X - U \Sigma I^\top \|_F^2 \quad \text{s.t.} \quad U^\top U = I_k, \quad I^\top I = I_k
 $$
 
 
@@ -67,7 +66,7 @@ $$
    - Better suited for non-linear relationships in rating data
 
 $$
-K(x_i, x_j) = \exp\left(-\gamma \, \| x_i - x_j \|^2 \right)
+K(x_i, x_j) = \exp\left(-\gamma \ \| x_i - x_j \|^2 \right)
 $$
    
 
