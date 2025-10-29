@@ -2,7 +2,7 @@
 
 This repository implements and compares various matrix completion methods for movie recommendation using the MovieLens dataset. The project focuses on solving the sparsity problem in collaborative filtering through different approaches including Matrix Factorization with Gradient Descent, PCA, and Kernel PCA.
 
-## 📁 Project Structure
+## Project Structure
 ```
 ├── notebooks/
 │   └── exploration.ipynb      # Data exploration and visualization
@@ -70,7 +70,7 @@ K(x_i, x_j) = \exp\left(-\gamma \ \| x_i - x_j \|^2 \right)
 $$
    
 
-## 🚀 Matrix Completion Results
+## Matrix Completion Results
 
 
 ### Training Curves
