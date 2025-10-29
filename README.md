@@ -167,8 +167,3 @@ python generate.py --name data/ratings_eval.npy
 [3] H. I. Alshbanat, H. Benhidour, and S. Kerarche, “A Survey of Latent Factor Models in Recommender Systems,” *Information Fusion*, vol. 117, p. 102905, May 2025.
 
 [4] D. Kim and B.-J. Yum, “Collaborative Filtering Based on Iterative Principal Component Analysis,” *Department of Industrial Engineering, Korea Advanced Institute of Science and Technology (KAIST)*, Taejon, Korea.
-
-
-
-
-
