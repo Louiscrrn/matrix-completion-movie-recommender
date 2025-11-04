@@ -82,7 +82,7 @@ $$
 </div>
 
 2. **Iterative PCA**
-<div align="center">
+<div align="center"> 
   <img src="outputs/rmse_train_iterative_pca.png" alt="RMSE Training" width="44.4%"/>
   <img src="outputs/rmse_val_iterative_pca.png" alt="RMSE Validation" width="45%"/>
 </div>
